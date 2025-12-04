@@ -1,72 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Card</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Md Tarik Anvar | AI/ML Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
+
 <body>
-    <div class="contact-card">
-        <div class="left-column">
-            <div class="profile">
-                <img src="My_Profile_pic.jpg" alt="Profile Picture" class="profile-img" >
-                <div class="profile-overlay">
-                    <p class="name">Md Tarik Anvar</p>
-                    <p class="tagline">CcpC</p>
-                </div>
-            </div>
-        </div>
-        <div class="right-column">
-            <div class="box">
-                <h1>Md Tarik Anvar</h1>
-                <h5>Junior at Central University of Jharkhand </h5>
-                <h4>Ranchi, Jharkhand, India</h4>
-                <h3>CcpC, CUJ</h3>
-            </div>
-            <div class="box">
-                <p class="contact">Phone: <span class="formate" id="phone">+91 6201143306</span></p>
-                <p class="contact">Personal Email: <span class="formate" id="personal-email">mdtarikanvar.cuj@gmail.com</span></p>
-                <p class="contact">College Email: <span class="formate" id="college-email">tarik.22190503033@cuj.ac.in</span></p>
-                <div class="social-connection"><!--Section for social media connect as column grid-->
-                    <a href="https://www.linkedin.com/in/tarik-anvar" target="_blank" class="social-link github">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-        
-                    <a href="https://www.instagram.com/_tariqueanwar_/" target="_blank" class="social-link instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/Tarik786" target="_blank" class="social-link github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <h3>Experience:</h3>
-                <div class="box">
-                    <ul>
-                        <li><p><span id="exp">
-                            Member CcpC.</span><br></li>
-                            Skills:
-                            <ol>
-                                <li>Programmer</li>
-                                <li>Full Stack Web Developer </li>
-                                <li>Android App developer </li>
-                            </ol>
-                        </span></p></ul>
-                </div>
-            <div class="box">
-                <h3>Education</h3>
-                <ul>
-                    <li><p><span id="edu">B.Tech & M.Tech in CSE, Central University of Jharkhand,Ranchi</span></p></li>
-                    <li><p><span id="edu">Intermidiate, PCM with CS, St Xavier's College of Ranchi</span></p></li>
-                    <li><p><span id="edu">Matriculation, St. Ignatius High School Gumla</span></p></li>
-                </ul>
-            </div>
-        </div>
+    <div class="background-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
     </div>
+
+    <main class="card-container">
+        <div class="glass-card">
+            <aside class="sidebar">
+                <div class="profile-section">
+                    <div class="img-container">
+                        <img src="My_Profile_pic.jpg" alt="Md Tarik Anvar" class="profile-img">
+                    </div>
+                    <h1 class="name">Md Tarik Anvar</h1>
+                    <p class="role">AI/ML Engineer & Full Stack Developer</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tarik-anvar" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/git-tarik" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:mdtarikanvar.cuj@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="actions">
+                        <a href="https://git-tarik.github.io/static-portfolio/" target="_blank"
+                            class="btn btn-primary">View Portfolio</a>
+                        <a href="mailto:mdtarikanvar.cuj@gmail.com" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="content-area">
+                <nav class="tabs">
+                    <button class="tab-btn active" data-tab="about">About</button>
+                    <button class="tab-btn" data-tab="projects">Projects</button>
+                    <button class="tab-btn" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="skills">Skills</button>
+                </nav>
+
+                <div class="tab-content active" id="about">
+                    <h2>About Me</h2>
+                    <p>I am a fourth-year Integrated B.Tech + M.Tech student in Computer Science & Engineering at the
+                        Central University of Jharkhand. I specialize in Artificial Intelligence and Machine Learning,
+                        with a passion for building intelligent systems and scalable web solutions.</p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>Integrated B.Tech + M.Tech in CSE</p>
+                                <p class="sub-text">Central University of Jharkhand (CGPA: 9.06)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Ranchi, Jharkhand, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="projects">
+                    <h2>Featured Projects</h2>
+                    <div class="project-list">
+                        <div class="project-card">
+                            <h3>LIT-RAG System</h3>
+                            <p>Advanced Retrieval-Augmented Generation system for document analysis and intelligent Q&A.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span><span>RAG</span><span>LLM</span>
+                            </div>
+                            <a href="https://github.com/git-tarik/lit-rag-app" target="_blank" class="link-btn">View
+                                Code <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h3>CampVerse</h3>
+                            <p>Modern web application for event discovery and participation with real-time features.</p>
+                            <div class="tags">
+                                <span>Web Dev</span><span>React</span>
+                            </div>
+                            <a href="https://github.com/CcpC-cuj/CampVerse" target="_blank" class="link-btn">View Code
+                                <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h3>HGR-ParallelCNN-XAI</h3>
+                            <p>Hand Gesture Recognition with Explainable AI using ParallelCNN architecture.</p>
+                            <div class="tags">
+                                <span>Deep Learning</span><span>XAI</span>
+                            </div>
+                            <a href="https://github.com/git-tarik/HGR-ParallelCNN-XAI" target="_blank"
+                                class="link-btn">View Code <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="experience">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="date">Research Intern</div>
+                            <h3>Explainable Hand Gesture Recognition</h3>
+                            <p>Conducted research on Explainable Hand Gesture Recognition using advanced deep learning
+                                techniques. Developed ParallelCNN architecture integrated with XAI methodologies.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="date">Research Intern</div>
+                            <h3>Medical Image Segmentation</h3>
+                            <p>Developed comprehensive medical image segmentation pipeline using U-Net architecture with
+                                PyTorch Lightning for efficient training.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <div class="skill-tags">
+                                <span>Python</span><span>Java</span><span>C++</span><span>JavaScript</span><span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Web Development</h3>
+                            <div class="skill-tags">
+                                <span>HTML5</span><span>CSS3</span><span>React</span><span>Node.js</span><span>Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>AI / ML</h3>
+                            <div class="skill-tags">
+                                <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>OpenCV</span><span>NLP</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <div class="skill-tags">
+                                <span>Git</span><span>Docker</span><span>VS Code</span><span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <script src="script.js"></script>
-   </body>
-  </html>
+</body>
+
+</html>

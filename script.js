@@ -1,23 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the phone number and email spans
-    var phoneSpan = document.getElementById('phone');
-    var personalEmailSpan = document.getElementById('personal-email');
-    var collegeEmailSpan = document.getElementById('college-email');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
 
-    // Add click event listeners to the spans
-    phoneSpan.addEventListener('click', function() {
-        var phoneNumber = phoneSpan.textContent;
-        window.location.href = 'tel:' + phoneNumber;
-    });
+            // Add active class to clicked button
+            btn.classList.add('active');
 
-    personalEmailSpan.addEventListener('click', function() {
-        var email = personalEmailSpan.textContent;
-        window.location.href = 'mailto:' + email;
-    });
-
-    collegeEmailSpan.addEventListener('click', function() {
-        var email = collegeEmailSpan.textContent;
-        window.location.href = 'mailto:' + email;
+            // Show corresponding content
+            const tabId = btn.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
     });
 });
